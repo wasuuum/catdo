@@ -7,13 +7,14 @@
 	text-decoration: none;
 }
 
+
  :root {
     --text-color: #fff;
     --second-color: #;
     --third-color: #;
-    --h1-font: 3rem;
-    --h2-font: 1.6rem;
-    --p-font: 1.5rem;
+    --h1-font: 5vh;
+    --h2-font: 3vh;
+    --p-font: 2vh;
 } 
 
 body {
@@ -24,9 +25,6 @@ body {
     overflow: hidden;
 }
 
-img {   
-    width: 100px;
-}
 
 .title {
     margin: 50px;
@@ -40,37 +38,41 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 30px 250px;
+    margin: 0 10vw;
 }
 
 .left {
-    width: 600px;
+    width: 40vw;    
 }
 
 .right {
-    width: 700px;
-}
-
-.coins img {
-    width: 60px;
+    width: 40vw;
 }
 
 .coins p {
-    font-size: var(--p-font);
+    font-size: var(--h2-font);
     padding-left: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.coins img {
+    width: 3.5vw;
 }
 
 .coins p span {
-    display: inline-block;
-    height: 70px;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
+
 
 .food {
     display: flex;
     align-items: center;
-    justify-content: center;    
     flex-direction: column;
+    width: 25vw;
     background-color: rgba(17, 8, 32, 0.7);
     box-shadow: inset 0px 0px 10px rgba(1, 4, 22, 0.6);
     border-radius: 30px;
@@ -92,10 +94,11 @@ h1 {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+    font-size: var(--p-font);
 }
 
 .food__pic img {
-    width: 100px;
+    width: 5vw;
     margin: 30px 40px;
     border: 3px solid #7a679f;
     border-radius: 10px;
@@ -110,15 +113,15 @@ h1 {
 
 .cat {
     display: flex;
-    justify-content: center;
+    padding-left: 8vw;
 }
 
 .cat img {
-    height: 400px;
-    width: auto;
-    margin-left: 60px;
     margin-top: 20px;
+    height: 45vh;
+    width: auto;
 }
+
 
 /* ----- right ----- */
 
@@ -130,6 +133,7 @@ input, button {
 }
 
 #new-task-input {
+    height: 6vh;
     flex: 1 1 0%;
     background-color: rgba(17, 8, 32, 0.7);
     box-shadow: inset 0px 0px 10px rgba(1, 4, 22, 0.6);
@@ -140,10 +144,11 @@ input, button {
 
 #new-task-submit, #add-coins {
     background-color: #9981c7;
-    padding: 1.3rem;
     border-radius: 1rem;
     color: white;
-    font-size: 15px;
+    height: 6vh;
+    font-size: 1.7vh;
+    padding: 1em;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -162,7 +167,7 @@ input, button {
 
 #new-task-input::placeholder {
     font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    font-size: 1.2vh;
 }
 
 #new-task-input[type="text"] {
@@ -183,7 +188,8 @@ input, button {
     border-right: 3px solid #9981c7;
     overflow: scroll;
     overflow-x:hidden; 
-    height: 500px;
+    height: 56vh;
+    width: 40vw;
     scrollbar-width: thin;
     scrollbar-color: #9981c7 rgba(1, 4, 22, 0.6);
 }
@@ -215,7 +221,7 @@ input, button {
 .checkbox-circle label {
     padding-left: 45px;
     padding-top: 5px;
-    font-size: 13.5px;
+    font-size: 1.5vh;
 }
 
 .checkbox-circle input:hover, label:hover {
@@ -260,7 +266,7 @@ input, button {
 
 .actions button {
     color: #9981c7;
-    font-size: 13px;
+    font-size: 1.5vh;
     font-family: 'Press Start 2P', cursive;
     padding-left: 10px;
     transition: 0.5s;
