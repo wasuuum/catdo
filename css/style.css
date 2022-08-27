@@ -15,6 +15,7 @@
     --h1-font: 5vh;
     --h2-font: 2.5vh;
     --p-font: 2vh;
+    --min-font: 1.5vh;
 } 
 
 body {
@@ -58,7 +59,7 @@ h1 {
 }
 
 .coins img {
-    width: 3.5vw;
+    width: 3vw;
 }
 
 .coins p span {
@@ -150,7 +151,7 @@ input, button {
     border-radius: 1rem;
     color: white;
     height: 6vh;
-    font-size: 1.7vh;
+    font-size: var(--min-font);
     padding: 1rem 1.5rem ;
     font-family: 'Press Start 2P', cursive;
 }
@@ -234,7 +235,7 @@ input, button {
 .checkbox-circle label {
     padding-left: 45px;
     padding-top: 5px;
-    font-size: 1.5vh;
+    font-size: var(--min-font);
 }
 
 .checkbox-circle input:hover, label:hover {
@@ -279,7 +280,7 @@ input, button {
 
 .actions button {
     color: #9981c7;
-    font-size: 1.5vh;
+    font-size: var(--min-font);
     font-family: 'Press Start 2P', cursive;
     padding-left: 10px;
     transition: 0.5s;
@@ -325,6 +326,7 @@ input, button {
         --h1-font: 5vw;
         --h2-font: 2.5vw;
         --p-font: 2vw;
+        --min-font: 1.5vw;
     } 
     
     body {
@@ -383,7 +385,6 @@ input, button {
     .coins p {
         padding-left: 0;
     }
-
     .task {
         position: relative;
     }
@@ -402,18 +403,18 @@ input, button {
 
 @media screen and (max-width:800px) {
     :root {
-        --h1-font: 7vw;
-        --h2-font: 4vw;
+        --h1-font: 5vw;
+        --h2-font: 3vw;
         --p-font: 3vw;
+        --min-font: 2vw;
     } 
     .checkbox-circle label {
-        font-size: 3vw;
+        font-size: 2vw;
     }
-
     .actions button {
-        font-size: 3vw;
+        font-size: 10px;
     }
     .food {
         width: 100vw;
     }
-}
+} 
