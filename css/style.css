@@ -15,7 +15,7 @@
     --h1-font: 5vh;
     --h2-font: 2.5vh;
     --p-font: 2vh;
-    --min-font: 1.5vh;
+    --min-font: 15px;
 } 
 
 body {
@@ -152,7 +152,7 @@ input, button {
     color: white;
     height: 6vh;
     font-size: var(--min-font);
-    padding: 1rem 1.5rem ;
+    padding: 0 1.5rem ;
     font-family: 'Press Start 2P', cursive;
 }
 
