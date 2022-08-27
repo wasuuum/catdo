@@ -322,9 +322,6 @@ input, button {
 
 @media screen and (max-width:1200px) {
     :root {
-        --text-color: #fff;
-        --second-color: #;
-        --third-color: #;
         --h1-font: 5vw;
         --h2-font: 2.5vw;
         --p-font: 2vw;
@@ -404,12 +401,17 @@ input, button {
 } 
 
 @media screen and (max-width:800px) {
+    :root {
+        --h1-font: 7vw;
+        --h2-font: 4vw;
+        --p-font: 3vw;
+    } 
     .checkbox-circle label {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .actions button {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .food {
         width: 100vw;
