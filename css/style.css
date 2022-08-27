@@ -13,7 +13,7 @@
     --second-color: #;
     --third-color: #;
     --h1-font: 5vh;
-    --h2-font: 3vh;
+    --h2-font: 2.5vh;
     --p-font: 2vh;
 } 
 
@@ -69,18 +69,19 @@ h1 {
     margin-left: 20px;
 }
 
+.foodbox {
+    display: flex;
+    justify-content: center;
+}
 
 .food {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 25vw;
-    height: 28vh;
-    padding: 2vh;
+    padding: 4vh 5vw;
     background-color: rgba(17, 8, 32, 0.7);
     box-shadow: inset 0px 0px 10px rgba(1, 4, 22, 0.6);
     border-radius: 30px;
-    margin: 0 60px;
 }
 
 .food h2 {
@@ -115,7 +116,7 @@ h1 {
 
 .cat {
     display: flex;
-    padding-left: 6vw;
+    justify-content: center;
 }
 
 .cat img {
