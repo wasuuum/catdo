@@ -27,8 +27,7 @@ body {
 
 
 .title {
-    margin-top: 5vh;
-    margin-bottom: 4vh;
+    margin: 5vh 4vw 4vh 4vw;
     text-align: center;
 }
 
@@ -40,7 +39,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: 0 10vw;
-    min-width: 1100px;
 }
 
 .left {
@@ -78,7 +76,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4vh 4vw;
+    padding: 4vh 3vw;
     background-color: rgba(17, 8, 32, 0.7);
     box-shadow: inset 0px 0px 10px rgba(1, 4, 22, 0.6);
     border-radius: 30px;
@@ -101,7 +99,7 @@ h1 {
 }
 
 .food__pic img {
-    width: 5vw;
+    height: 10vh;
     margin: 30px 50px;
     border: 3px solid #7a679f;
     border-radius: 10px;
@@ -312,18 +310,59 @@ input, button {
     color: gray;
 }
 
-/* @media screen and (max-width:1100px) {
+@media screen and (max-width:1200px) {
     body {
         overflow: scroll;
+        overflow-x:hidden;
     }
     .container {
         flex-direction: column; 
         justify-content: space-between;
     }
-    .left, .right, .coins, .food, .cat{
+    .left, .right, .coins, .cat, input, .tasksbox {
         width: 100%;
     }
-    .right {
-        padding-top: 500px;
+
+    #new-task-submit {
+        width: 20vw;
+        font-size: 1.5vw;
     }
-} */
+
+    #add-coins {
+        width: 20vw;
+        font-size: 1.5vw;
+        padding: 0;
+    }
+
+    .food {
+        width: 50vw;
+    }
+
+    .right {
+        order: 1;
+    }
+
+    .left {
+        order: 2;
+        padding-top: 50px;
+    }
+    
+    .cat img {
+        margin-top: 20px;
+        height: 43vh;
+        width: auto;
+        position: static;
+    }
+    .coins img {
+        width: 6vw;
+    }
+    .coins p {
+        padding-left: 0;
+    }
+} 
+
+@media screen and (max-width:800px) {
+    .food {
+        width: 70vw;
+    }
+}
