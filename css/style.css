@@ -199,6 +199,16 @@ input, button {
     scrollbar-color: #9981c7 rgba(1, 4, 22, 0.6);
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    background:rgba(1, 4, 22, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+    background:#9981c7
+} 
+
+
 .tasklist {
     margin-right: 20px;
 }
