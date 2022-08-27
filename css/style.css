@@ -78,7 +78,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4vh 5vw;
+    padding: 4vh 4vw;
     background-color: rgba(17, 8, 32, 0.7);
     box-shadow: inset 0px 0px 10px rgba(1, 4, 22, 0.6);
     border-radius: 30px;
@@ -102,7 +102,7 @@ h1 {
 
 .food__pic img {
     width: 5vw;
-    margin: 30px 40px;
+    margin: 30px 50px;
     border: 3px solid #7a679f;
     border-radius: 10px;
     transition: 0.5s;
