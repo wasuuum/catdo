@@ -363,6 +363,6 @@ input, button {
 
 @media screen and (max-width:800px) {
     .food {
-        width: 70vw;
+        width: 100vw;
     }
 }
