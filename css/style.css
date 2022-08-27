@@ -274,7 +274,7 @@ input, button {
 }
 
 .checkbox-circle label {
-    padding-top: 0;
+    width: 70vw;
 }
 
 .actions button {
@@ -303,6 +303,16 @@ input, button {
     display: none;
 }
 
+.task {
+    position: relative;
+}
+
+.checkbox-circle input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
 #limit {
     padding-bottom: 10px;
     padding-left: 5px;
@@ -311,10 +321,27 @@ input, button {
 }
 
 @media screen and (max-width:1200px) {
+    :root {
+        --text-color: #fff;
+        --second-color: #;
+        --third-color: #;
+        --h1-font: 5vw;
+        --h2-font: 2.5vw;
+        --p-font: 2vw;
+    } 
+    
     body {
         overflow: scroll;
         overflow-x:hidden;
     }
+
+    .checkbox-circle label {
+        width: 45vw;
+        font-size: 1.5vw;
+        display: block;
+        word-wrap: break-word;
+    }
+    
     .container {
         flex-direction: column; 
         justify-content: space-between;
@@ -359,9 +386,31 @@ input, button {
     .coins p {
         padding-left: 0;
     }
+
+    .task {
+        position: relative;
+    }
+    .actions {
+        display: flex;
+        flex-direction: column;
+        right: 15px;   
+    }
+    .actions button {
+        font-size: 1.2vw;
+    }
+    .actions button:last-child {
+        padding-top: 10px;
+    }
 } 
 
 @media screen and (max-width:800px) {
+    .checkbox-circle label {
+        font-size: 2vw;
+    }
+
+    .actions button {
+        font-size: 2vw;
+    }
     .food {
         width: 100vw;
     }
