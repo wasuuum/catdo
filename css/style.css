@@ -113,12 +113,14 @@ h1 {
 
 .cat {
     display: flex;
-    padding-left: 8vw;
+    padding-left: 6vw;
+    position: absolute;
+    bottom: 0px;
 }
 
 .cat img {
     margin-top: 20px;
-    height: 45vh;
+    height: 43vh;
     width: auto;
 }
 
