@@ -74,12 +74,13 @@ const deleteTask = index => {
 
 const editTask = index => {
     let changedTask = prompt("Please enter your task");
-    if (question != null || question != "") {
+    if (changedTask === null) {
+        tasks[index].description = tasks[index].description;
+    }else{
         tasks[index].description = changedTask;
         updateLocal();
         fillHtmlList();
-        input.value = '';
-    }
+    } 
 }
 
 addTask.addEventListener('click', () => {
