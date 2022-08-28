@@ -50,6 +50,8 @@ h1 {
     width: 40vw;
 }
 
+/* ----- left ----- */
+
 .coins p {
     font-size: var(--h2-font);
     padding-left: 50px;
@@ -320,6 +322,8 @@ input, button {
     font-size: 10px;
     color: gray;
 }
+
+/* ----- responsive ----- */
 
 @media screen and (max-width:1200px) {
     :root {
